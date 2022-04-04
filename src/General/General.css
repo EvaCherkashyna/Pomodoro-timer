@@ -1,0 +1,42 @@
+#active-red{
+    background-color: var(--tmt-color);
+    color: var(--bg-color);
+}
+#active-blue{
+    background-color: var(--lbl-color);
+    color: var(--bg-color);
+}
+#active-purple{
+    background-color: var(--prl-color);
+    color: var(--bg-color);
+} 
+
+.active-red:hover{
+    color: var(--tmt-color);
+}
+.active-blue:hover{
+    color: var(--lbl-color);
+}
+.active-purple:hover{
+    color: var(--prl-color);
+}
+
+
+/* Устанавливаем высоту и ширину контейнера */
+.base-timer {
+    position: relative;
+    height: 300px;
+    width: 300px;
+  }
+  
+  /* Удаляем стили SVG, которые могли бы скрыть временную метку */
+  .base-timer__circle {
+    fill: none;
+    stroke: none;
+  }
+  
+  /* Контур SVG, который отображает прогресс времени */
+  .base-timer__path-elapsed {
+    stroke-width: 7px;
+    stroke: grey;
+  }

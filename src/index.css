@@ -1,13 +1,67 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Hind:wght@600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Nunito+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=BhuTuka+Expanded+One&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Assistant:wght@200&display=swap");
+:root {
+  /* colors */
+  --bg-color: rgb(27 29 60);
+  --prl-color: rgb(216 130 244);
+  --tmt-color: rgb(249 112 112);
+  --lbl-color: rgb(113 243 251);
+  --lgr-color: rgb(238 241 250);
+  --font-sets-color: rgb(21 27 49);
+  --aplly-color: rgb(246 113 113);
+  --num-color: rgb(215 223 254);
+  --pom-color: rgb(214 218 243);
+  --set-ico-color: rgb(125 128 159);
+  --circle-color: rgb(21 25 50);
+  /* font-family */
+  --ff-pause : 'BhuTuka Expanded One', cursive;;
+  --ff-pom: "Poppins", sans-serif;
+  --ff-set: "Hind", sans-serif;
+  --ff-num: "Nunito Sans", sans-serif;
+}
+p[font="first"] {
+  --ff-time: "Roboto Slab", serif;
+}
+p[font="second"] {
+  --ff-time: "Bebas Neue", cursive;
+}
+p[font="third"] {
+  --ff-time: "Assistant", sans-serif;
+}
+div[activ=true]{
+  --bg-fcolor: rgb(27 29 60);
+  --color: rgb(255, 255, 255);
+}
+div[activ=false]{
+  --bg-fcolor: rgb(238 241 250);
+  --color: rgb(159 159 162);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+.time {
+  color: var(--pom-color);
+  font-family: var(--ff-time);
+  font-size: 6rem;
+}
+body {
+  background-color: var(--bg-color);
+}
+circle {
+  fill: none;
+  stroke: var(--tmt-color);
+  stroke-width: 20px;
+  stroke-dasharray: 100;
+}
+body[color="blue"]{
+  --color-body: rgb(113 243 251);
+}
+body[color="red"]{
+  --color-body: rgb(249 112 112);
+}
+body[color="purple"]{
+  --color-body: rgb(216 130 244);
 }

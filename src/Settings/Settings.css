@@ -1,0 +1,34 @@
+.fonts {
+  background-color: var(--bgf-color);
+  color: var(--color);
+}
+.active{
+    background-color: rgb(27 29 60);
+    color: rgb(255, 255, 255);
+}
+.fonts:hover{
+    background-color: rgb(27 29 60);
+    color: rgb(255, 255, 255);
+}
+
+.firstColor{
+    background-color: var(--tmt-color);
+}
+.secondColor{
+    background-color: var(--lbl-color);
+}
+.thirdColor{
+    background-color: var(--prl-color);
+}
+#time{
+    margin-bottom: 1.3rem;
+}
+.firstFont{
+ font-family:"Roboto Slab", serif;
+}
+.secondFont{
+ font-family: 'Bebas Neue', cursive;
+}
+.thirdFont{
+ font-family: 'Assistant', sans-serif;
+}
