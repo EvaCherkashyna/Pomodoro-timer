@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+
 import { IoCheckmarkSharp,IoCloseOutline } from 'react-icons/io5'
 //Color
 export const Circle = styled.div`

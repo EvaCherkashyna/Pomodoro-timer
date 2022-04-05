@@ -1,4 +1,4 @@
-
+import React from 'react'
 import {Main,H1Header,PomodoroSet,Pomodoro,PomodoroP,PomodoroInput} from '../SettingsComponents'
 
 const TimeSettings = ({pomodoroCount,setPomodoroCount, shortBreak, longBreak, setShortBreak, setLongBreak}) => {

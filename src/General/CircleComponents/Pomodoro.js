@@ -8,8 +8,8 @@ const PomodoroTimer = ({ font, classColor, pomodoroCount }) => {
     console.log(minutes, " ", seconds);
     useEffect(() => setMinutes(pomodoroCount), [pomodoroCount])
     useEffect(() => {
-        if (active == true) {
-            if (minutes != 0 || seconds != 0) {
+        if (active === true) {
+            if (minutes !== 0 || seconds !== 0) {
                 const intervalId = setInterval(() => updateTime(), 1000)
                 return () => clearInterval(intervalId)
             }
@@ -17,7 +17,7 @@ const PomodoroTimer = ({ font, classColor, pomodoroCount }) => {
     })
 
     function updateTime() {
-        if (seconds == 0) {
+        if (seconds === 0) {
             setMinutes(minutes-1);
             setSeconds(59)
         }

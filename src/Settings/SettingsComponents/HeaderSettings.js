@@ -1,5 +1,5 @@
 import {Header,Ico,SettingsH1} from '../SettingsComponents'
-
+import React from 'react'
 const HeaderSettings = ({onClick}) => {
 
     return (
